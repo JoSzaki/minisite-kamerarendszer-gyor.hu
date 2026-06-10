@@ -899,11 +899,15 @@
         f = (await res.json()).fields || {};
       } else {
         const res = await fetch(
-          'https://firestore.googleapis.com/v1/projects/joszaki-minisite/databases/(default)/documents/joszaki_kamera_gyor?pageSize=1&key=AIzaSyDfdCNl3LeuBT4xIYQPYluSVKKMFJTGVws'
+          'https://firestore.googleapis.com/v1/projects/joszaki-minisite/databases/(default)/documents/joszaki_kamera_gyor?pageSize=20&key=AIzaSyDfdCNl3LeuBT4xIYQPYluSVKKMFJTGVws'
         );
         if (!res.ok) return;
         const data = await res.json();
-        const doc  = data.documents?.[0];
+        const docs = data.documents || [];
+        const doc  = docs.find(d => {
+          const foto = d.fields?.foto?.stringValue || '';
+          return foto && !foto.includes('default-avatar');
+        }) || docs[0];
         if (!doc) return;
         id = doc.name.split('/').pop();
         f  = doc.fields || {};
