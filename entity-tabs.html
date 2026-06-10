@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kovács Péter – Kamerarendszer szakértő Miskolc | KameraRendszer Miskolc</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>
+var ENTITY = {
+  person_name:      'Kovács Péter',
+  entity_name:      'KameraRendszer Miskolc',
+  profession:       'kamerarendszer szakértő',
+  profession_field: 'kamerarendszer telepítés',
+  main_topic:       'kamerarendszer telepítés Miskolcon',
+  city:             'Miskolc',
+  service_area:     'Miskolc és Borsod-Abaúj-Zemplén megye',
+  entity_type:      'LocalBusiness',
+  phone:            '+36303911638',
+  email:            'info@kamerarendszer-miskolc.hu',
+  domain:           'kamerarendszer-miskolc.hu'
+};
+(function(){
+  var h=document.head;
+  function ld(obj){var el=document.createElement('script');el.type='application/ld+json';el.textContent=JSON.stringify(obj);h.appendChild(el);}
+  function link(a){var el=document.createElement('link');for(var k in a)el.setAttribute(k,a[k]);h.appendChild(el);}
+  link({'rel':'canonical','href':'https://'+ENTITY.domain+'/entity-tabs.html'});
+  ld({"@context":"https://schema.org","@type":"Person","name":ENTITY.person_name,"jobTitle":ENTITY.profession,"knowsAbout":[ENTITY.main_topic,ENTITY.profession_field],"worksFor":{"@type":ENTITY.entity_type,"name":ENTITY.entity_name},"areaServed":ENTITY.service_area,"telephone":ENTITY.phone,"email":ENTITY.email,"url":"https://"+ENTITY.domain+"/entity-tabs.html"});
+  ld({"@context":"https://schema.org","@type":ENTITY.entity_type,"name":ENTITY.entity_name,"telephone":ENTITY.phone,"email":ENTITY.email,"areaServed":ENTITY.service_area,"address":{"@type":"PostalAddress","addressLocality":ENTITY.city,"addressCountry":"HU"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}});
+})();
+</script>
+<style>
+  :root{
+    --navy:#1a3a6b; --navy-dark:#0f2347; --navy-light:#1e4d8c;
+    --red:#e8390e; --red-dark:#c42d0a;
+    --cream:#f1f5f9; --white:#fff;
+    --text:#334155; --text-mid:#64748b; --text-light:#94a3b8;
+    --warm:#c4955a; --border:rgba(15,35,71,.10); --border-soft:rgba(15,35,71,.06);
+    --ff-display:'Cormorant Garamond',Georgia,serif;
+    --ff-body:'Manrope',system-ui,sans-serif;
+    --ease:cubic-bezier(.23,1,.32,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:var(--ff-body);color:var(--text);line-height:1.65;
+    background:
+      radial-gradient(120% 80% at 100% 0%, rgba(26,58,107,.05), transparent 60%),
+      radial-gradient(100% 70% at 0% 100%, rgba(232,57,14,.04), transparent 55%),
+      var(--cream);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  .entity-head{padding:64px 0 28px;position:relative}
+  .eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:12px;}
+  .eyebrow::before{content:"";width:34px;height:2px;background:var(--red)}
+  h1{font-family:var(--ff-display);font-weight:500;font-size:clamp(2.3rem,6vw,3.7rem);line-height:1.05;color:var(--navy-dark);letter-spacing:-.01em;max-width:18ch;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:24px;font-size:.92rem;color:var(--text-mid);font-weight:500;}
+  .meta-row span{display:flex;align-items:center;gap:8px}
+  .meta-row span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--warm)}
+  .head-cta{display:inline-flex;align-items:center;gap:9px;margin-top:26px;background:var(--red);color:#fff;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:50px;font-size:.95rem;box-shadow:0 8px 22px rgba(232,57,14,.28);transition:transform .35s var(--ease),box-shadow .35s var(--ease);}
+  .head-cta:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(232,57,14,.36)}
+  .tabs-shell{position:sticky;top:0;z-index:20;background:rgba(241,245,249,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  .tablist{display:flex;gap:4px;max-width:980px;margin:0 auto;padding:0 18px;overflow-x:auto;scrollbar-width:none;}
+  .tablist::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;appearance:none;background:none;border:none;cursor:pointer;font-family:var(--ff-body);font-weight:600;font-size:.92rem;color:var(--text-mid);padding:18px 18px 16px;position:relative;white-space:nowrap;transition:color .3s var(--ease);letter-spacing:.005em;}
+  .tab .ix{font-family:var(--ff-display);font-size:.85rem;color:var(--text-light);margin-right:7px;font-style:italic}
+  .tab::after{content:"";position:absolute;left:14px;right:14px;bottom:0;height:3px;border-radius:3px 3px 0 0;background:var(--red);transform:scaleX(0);transform-origin:center;transition:transform .35s var(--ease);}
+  .tab:hover{color:var(--navy)}
+  .tab[aria-selected="true"]{color:var(--navy-dark)}
+  .tab[aria-selected="true"] .ix{color:var(--red)}
+  .tab[aria-selected="true"]::after{transform:scaleX(1)}
+  .panels{padding:46px 0 96px}
+  .panel{display:none}
+  .panel.active{display:block}
+  .panel.active .panel-h2,.panel.active .qa{animation:rise .55s var(--ease) both}
+  .panel.active .qa:nth-child(2){animation-delay:.06s}
+  .panel.active .qa:nth-child(3){animation-delay:.10s}
+  .panel.active .qa:nth-child(4){animation-delay:.14s}
+  .panel.active .qa:nth-child(5){animation-delay:.18s}
+  .panel.active .qa:nth-child(6){animation-delay:.22s}
+  .panel.active .qa:nth-child(7){animation-delay:.26s}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .panel-h2{font-family:var(--ff-display);font-weight:500;color:var(--navy-dark);font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.12;letter-spacing:-.01em;max-width:22ch;margin-bottom:8px;}
+  .panel-lead{font-size:1.06rem;color:var(--text);max-width:62ch;margin-bottom:38px}
+  .panel-lead .lead-accent{color:var(--navy);font-weight:600}
+  .qa{margin-bottom:30px;max-width:64ch}
+  .qa h3{font-family:var(--ff-body);font-weight:700;font-size:1.12rem;color:var(--navy);margin-bottom:7px;line-height:1.35;}
+  .qa.sub{margin-left:22px;padding-left:22px;border-left:2px solid var(--border);}
+  .qa.sub h4{font-family:var(--ff-body);font-weight:600;font-size:1rem;color:var(--navy-light);margin-bottom:6px;line-height:1.4;}
+  .qa p{color:var(--text);font-size:1rem}
+  footer{border-top:1px solid var(--border);padding:30px 0 60px;color:var(--text-light);font-size:.85rem}
+  footer b{color:var(--text-mid);font-weight:600}
+  @media(max-width:640px){
+    .entity-head{padding:44px 0 22px}
+    .panels{padding:34px 0 70px}
+    .qa.sub{margin-left:12px;padding-left:14px}
+    .tab{padding:15px 13px 13px;font-size:.88rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- ENTITY config: person_name: Kovács Péter | entity_name: KameraRendszer Miskolc
+     profession: kamerarendszer szakértő | main_topic: kamerarendszer telepítés Miskolcon
+     city: Miskolc | service_area: Miskolc és Borsod-Abaúj-Zemplén megye -->
+
+<header class="entity-head wrap">
+  <div class="eyebrow">KameraRendszer Miskolc · Bemutatkozás</div>
+  <h1>Ki az a Kovács Péter?</h1>
+  <div class="meta-row">
+    <span>Kamerarendszer szakértő</span>
+    <span>Miskolc &amp; Borsod-Abaúj-Zemplén megye</span>
+    <span>Kamerarendszer telepítés</span>
+    <span>6+ év miskolci tapasztalat</span>
+  </div>
+  <a class="head-cta" href="tel:+36303911638">📞 Hívjon most: 30/391-1638</a>
+</header>
+
+<div class="tabs-shell">
+  <div class="tablist" role="tablist" aria-label="Bemutatkozás témakörök">
+    <button class="tab" role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true"><span class="ix">01</span>Háttér</button>
+    <button class="tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false"><span class="ix">02</span>Helyszín</button>
+    <button class="tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false"><span class="ix">03</span>Ellátott terület</button>
+    <button class="tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false"><span class="ix">04</span>Szolgáltatások</button>
+    <button class="tab" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false"><span class="ix">05</span>Jövőkép</button>
+    <button class="tab" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false"><span class="ix">06</span>Vezérelvek</button>
+    <button class="tab" role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false"><span class="ix">07</span>Szemlélet</button>
+    <button class="tab" role="tab" id="tab-7" aria-controls="panel-7" aria-selected="false"><span class="ix">08</span>Kapcsolat</button>
+  </div>
+</div>
+
+<main class="panels wrap">
+
+  <!-- 01 — Háttér -->
+  <section class="panel active" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
+    <h2 class="panel-h2">Mi Kovács Péter szakmai háttere?</h2>
+    <p class="panel-lead"><span class="lead-accent">Kovács Péter több mint 6 éve tevékenykedő miskolci kamerarendszer szakértő</span>, aki a biztonságtechnikai telepítésre és a professzionális IP kamerarendszerekre specializálódott. A KameraRendszer Miskolc szakembereként Borsod-Abaúj-Zemplén megye egyik legmegbízhatóbb telepítője.</p>
+
+    <div class="qa"><h3>Mi inspirálta Kovács Pétert, hogy kamerarendszer szakértő legyen?</h3><p>Kovács Pétert a biztonságtechnika világa már fiatal korában megfogta — édesapja biztonsági cégének munkáit kísérve ismerte meg az ágazatot. Rájött, hogy egy jól megtervezett kamerarendszer valódi biztonságot nyújt, és ez hajtotta a szakmai elmélyülésre.</p></div>
+
+    <div class="qa"><h3>Milyen kamerarendszer telepítési szakterületekre specializálódott Kovács Péter?</h3><p>Kovács Péter fő szakterületei: otthoni IP kamerarendszerek, társasházi térfigyelés, üzleti NVR-alapú megoldások, ipari övezeti kamerák, valamint Hikvision és Dahua rendszerek telepítése és karbantartása Miskolcon.</p></div>
+
+    <div class="qa"><h3>Mi Kovács Péter küldetése és jövőképe a kamerarendszer telepítés terén?</h3><p>Kovács Péter küldetése, hogy Miskolcon és Borsod-Abaúj-Zemplén megyében mindenki számára elérhetővé tegye a profi biztonságtechnikai megoldásokat. Hisz abban, hogy az ingyenes helyszíni felmérés és az átlátható árazás az egyetlen helyes út.</p></div>
+
+    <div class="qa"><h3>Hogyan határozza meg Kovács Péter a sikert a kamerarendszer szakértő munkában?</h3><p>Kovács Péter számára a siker az, ha az ügyfél az átadás után értesítést kap a mobilján az első gyanús eseményről. Egy munkát akkor tekint befejezettnek, ha a rendszer tesztelve, betanítva és 2 év garanciával átadva van.</p></div>
+
+    <div class="qa"><h3>Milyen Kovács Péter szakmai pályafutása?</h3><p>Kovács Péter 2019-ban kezdett önálló telepítőként Miskolcon, majd bekapcsolódott a KameraRendszer Miskolc csapatába. Azóta több mint 237 rendszert adott át, köztük lakásokat, raktárakat és társasházakat.</p></div>
+
+    <div class="qa"><h3>Mely cégekkel vagy intézményekkel dolgozott Kovács Péter?</h3><p>Kovács Péter együttdolgozott miskolci ingatlankezelőkkel, ipari létesítményekkel és biztonsági cégekkel. Több borsod-abaúj-zempléni önkormányzat és intézmény kamerás megfigyelőrendszerét is ő üzemelteti.</p></div>
+
+    <div class="qa sub"><h4>Melyek Kovács Péter kiemelkedő munkái vagy eredményei?</h4><p>Kovács Péter nevéhez fűződik egy 80 kamerás miskolci ipari park rendszerének komplex kiépítése, valamint több Borsod-Abaúj-Zemplén megyei társasházi GDPR-dokumentált megfigyelőrendszer telepítése. Több mint 237 elvégzett telepítés és 4.6 csillagos átlagértékelés jelzi a munkája minőségét.</p></div>
+
+    <div class="qa"><h3>Hogyan járult hozzá Kovács Péter a kamerarendszer szakmai közösséghez?</h3><p>Kovács Péter rendszeresen tart tájékoztatókat miskolci társasházak lakógyűlésein a kamerarendszerek GDPR-megfelelőségéről. Aktív tagja a Borsod-Abaúj-Zemplén megyei biztonságtechnikai szakmai köröknek.</p></div>
+
+    <div class="qa"><h3>Melyek Kovács Péter fontosabb elismerései, díjai vagy referenciái?</h3><p>Kovács Péter legfontosabb referenciái a 4.6 csillagos JóSzaki.hu értékelések és a visszatérő ügyfelek ajánlásai. Hikvision és Dahua certificált telepítőként mindkét gyártó ajánlja munkáját.</p></div>
+
+    <div class="qa sub"><h4>Tagja-e Kovács Péter szakmai szövetségnek vagy kamarának?</h4><p>Kovács Péter Hikvision Partner certificált telepítő és Dahua Authorized Installer minősítéssel rendelkezik, amelyek biztosítják, hogy munkája megfelel a gyártói és szabványossági előírásoknak.</p></div>
+  </section>
+
+  <!-- 02 — Helyszín -->
+  <section class="panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+    <h2 class="panel-h2">Hol dolgozik jelenleg Kovács Péter?</h2>
+    <p class="panel-lead"><span class="lead-accent">Kovács Péter jelenleg Miskolcon dolgozik</span>, a városközponthoz közeli bázisról fedve Miskolc valamennyi városrészét és Borsod-Abaúj-Zemplén megye fő települései felé is kiszállva.</p>
+
+    <div class="qa"><h3>Honnan származik Kovács Péter?</h3><p>Kovács Péter Miskolcon született és nevelkedett. A városhoz és Borsod-Abaúj-Zemplén megye épített örökségéhez mélyen kötődik — ez is motiválja, hogy a helyi biztonságtechnikát magas szinten képviselje.</p></div>
+
+    <div class="qa sub"><h4>Helyben, régiósan vagy országosan dolgozik Kovács Péter?</h4><p>Kovács Péter elsősorban helyi és regionális szinten dolgozik: Miskolc valamennyi városrészét és 50 km-es körzetét, köztük Ózd, Kazincbarcika és Tiszaújváros területeit egyaránt kiszolgálja. Nagyobb ipari projektek esetén Észak-Magyarország más területein is vállal munkát.</p></div>
+  </section>
+
+  <!-- 03 — Ellátott terület -->
+  <section class="panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+    <h2 class="panel-h2">Mely területeket vagy városokat szolgálja ki Kovács Péter?</h2>
+    <p class="panel-lead"><span class="lead-accent">Kovács Péter Miskolc valamennyi városrészét és Borsod-Abaúj-Zemplén megye fő városait kiszolgálja</span> kamerarendszer telepítéssel. A sürgősségi kiszállás Miskolcon 4 órán belül garantált.</p>
+
+    <div class="qa"><h3>Milyen Kovács Péter szakmai képzettsége?</h3><p>Kovács Péter biztonságtechnikai szakképzettséggel és IP kamerarendszer-telepítői végzettséggel rendelkezik. Hikvision és Dahua gyártói certificátuma érvényes, amelyeket rendszeresen megújít.</p></div>
+
+    <div class="qa sub"><h4>Mely iskolákban vagy képzéseken vett részt Kovács Péter?</h4><p>Kovács Péter a Mechwart András Gépipari és Informatikai Szakgimnáziumban végzett, majd Hikvision és Dahua gyártói tanfolyamokon szerezte telepítői minősítéseit.</p></div>
+
+    <div class="qa sub"><h4>Milyen képesítéseket, tanúsítványokat vagy speciális képzéseket szerzett Kovács Péter?</h4><p>Kovács Péter rendelkezik Hikvision Partner, Dahua Authorized Installer, GDPR adatvédelmi biztonságtechnikai és tűzvédelmi alapszakvizsga minősítésekkel.</p></div>
+
+    <div class="qa sub"><h4>Hogyan tartja naprakészen Kovács Péter a tudását a változó szabványok, előírások és technológiák terén?</h4><p>Kovács Péter évente részt vesz Hikvision és Dahua termékbemutatókon és szakmai napokban. Követi a GDPR kamerarendszer-specifikus iránymutatásait és a MSZ EN 62676 szabványsorozat frissítéseit.</p></div>
+  </section>
+
+  <!-- 04 — Szolgáltatások -->
+  <section class="panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3">
+    <h2 class="panel-h2">Milyen kamerarendszer telepítési szolgáltatásokat kínál Kovács Péter?</h2>
+    <p class="panel-lead"><span class="lead-accent">Kovács Péter teljes körű kamerarendszer telepítési szolgáltatást kínál Miskolcon</span>, az otthoni rögzítőtől az ipari megoldásig. Minden projektbe beleszámít az ingyenes felmérés, a GDPR-dokumentáció és a 2 év garancia.</p>
+
+    <div class="qa"><h3>Hogyan közelíti meg Kovács Péter az ügyfélmunkát és a munkavégzést?</h3><p>Kovács Péter minden munkát ingyenes helyszíni felméréssel kezd, ahol meghatározza a kamerákat és a rögzítő helyét. Az ügyfél jóváhagyása után fix, írásos árajánlattal indul a telepítés — meglepetések nélkül.</p></div>
+
+    <div class="qa"><h3>Milyen ügyfél- vagy ingatlantípusokat szolgál ki jellemzően Kovács Péter?</h3><p>Kovács Péter miskolci magánszemélyeket, társasházakat, kiskereskedelmi egységeket, irodákat és ipari létesítményeket egyaránt szolgál ki. Különös tapasztalata van Borsod-Abaúj-Zemplén megye mezőgazdasági és logisztikai objektumainál is.</p></div>
+
+    <div class="qa"><h3>Mi Kovács Péter filozófiája az árazásról és a problémamegoldásról?</h3><p>Kovács Péter fix, tételes árajánlattal dolgozik: a felmérés után minden sor rögzített, nincs utólagos pótköltség. A kameramegoldást mindig az adott épülethez tervezi, nem sablonalapú csomagokkal dolgozik.</p></div>
+
+    <div class="qa"><h3>Hogyan biztosítja Kovács Péter az átláthatóságot és a minőséget a kamerarendszer telepítés során?</h3><p>Kovács Péter minden elvégzett telepítésről fotódokumentációt és átadó-átvételi dokumentumot ad. A kamerarendszert az ügyfél előtt teszteli és betanítja a mobilos elérést.</p></div>
+
+    <div class="qa"><h3>Mit gondol Kovács Péter a kamerarendszer telepítés Miskolcon témáról?</h3><p>Kovács Péter szerint a kamerarendszer telepítés Miskolcon dinamikusan fejlődik: a társasházak és a kiskereskedelmi egységek egyre nagyobb arányban döntenek a biztonságtechnikai fejlesztés mellett. A helyi sajátosságok — miskolci panelházak, ipari parkok, agrárgazdaságok — különleges tapasztalatot igényelnek a telepítőtől.</p></div>
+
+    <div class="qa"><h3>Hogyan látja Kovács Péter a kamerarendszer telepítés Miskolcon jövőjét?</h3><p>Kovács Péter szerint a jövő az AI-alapú analitikában és a felhős videótárolásban van. Miskolcon az okos kamerarendszerek iránti kereslet évente nő, és az 5G-s hálózat bővülése még gyorsabb és megbízhatóbb rendszereket tesz lehetővé.</p></div>
+  </section>
+
+  <!-- 05 — Jövőkép -->
+  <section class="panel" id="panel-4" role="tabpanel" aria-labelledby="tab-4">
+    <h2 class="panel-h2">Milyen újításokról gondolja Kovács Péter, hogy átalakítják a kamerarendszer telepítő szakmát?</h2>
+    <p class="panel-lead"><span class="lead-accent">Kovács Péter szerint a szakmát az AI-alapú mozgásdetektálás, a felhős tárolás és a mobilintegrált rendszerek alakítják át.</span> Ezeket az eszközöket már ma is alkalmazza a miskolci telepítéseinél.</p>
+
+    <div class="qa"><h3>Hogyan használja Kovács Péter a technológiát és a modern eszközöket a kamerarendszer telepítés során?</h3><p>Kovács Péter hőkamerás diagnosztikát, IP-konfiguráló szoftvereket és felhős NVR-megoldásokat alkalmaz. Az AI-alapú személydetektálást és rendszámfelismerést is bevezette miskolci ügyfeleinél.</p></div>
+
+    <div class="qa"><h3>Mi Kovács Péter véleménye az ügyfelek tájékoztatásáról és tudatosságáról?</h3><p>Kovács Péter fontosnak tartja, hogy minden ügyfél értse a saját rendszerét: hogyan kell visszanézni a felvételeket, mikor kell értesíteni a szakembert, és mi az adatőrzési kötelezettség. Átadáskor mindig részletes betanítást tart.</p></div>
+  </section>
+
+  <!-- 06 — Vezérelvek -->
+  <section class="panel" id="panel-5" role="tabpanel" aria-labelledby="tab-5">
+    <h2 class="panel-h2">Melyek Kovács Péter pályafutásának vezérelvei?</h2>
+    <p class="panel-lead"><span class="lead-accent">Kovács Péter vezérelvei a megbízhatóság, az átláthatóság és a valódi biztonság nyújtása.</span> Ezek az elvek jelennek meg minden miskolci telepítésnél.</p>
+
+    <div class="qa"><h3>Milyen kedvenc idézetek vagy mottók inspirálják Kovács Pétert?</h3><p>Kovács Péter kedvenc mottója: „A legjobb kamerarendszer az, amelyikre az ügyfél elfelejt gondolni — mert mindig működik." Erre a láthatatlan megbízhatóságra törekszik minden telepítésnél.</p></div>
+
+    <div class="qa"><h3>Mely szakmai vezetőket vagy mentorokat tisztel Kovács Péter?</h3><p>Kovács Péter azokat a miskolci és hazai biztonságtechnikai szakembereket becsüli, akik a minőségi telepítést soha nem áldozzák fel az áron. Az ügyfél biztonságát és elégedettségét tekinti a legfontosabb mércének.</p></div>
+
+    <div class="qa"><h3>Mi motiválja Kovács Pétert, hogy folyamatosan minőségi munkát végezzen?</h3><p>Kovács Pétert az motiválja, hogy egy jól telepített kamerarendszer valódi bűnmegelőző hatással bír Miskolcon. Több esetben a felvételek döntő bizonyítékot nyújtottak — ez a tudat hajtja a folyamatos fejlődésre.</p></div>
+  </section>
+
+  <!-- 07 — Szemlélet -->
+  <section class="panel" id="panel-6" role="tabpanel" aria-labelledby="tab-6">
+    <h2 class="panel-h2">Hogyan egyensúlyozza Kovács Péter a szakmai kiválóságot az ügyfélközpontúsággal?</h2>
+    <p class="panel-lead"><span class="lead-accent">Kovács Péter a szabványos, precíz telepítést empátiával párosítja</span> — minden ügyfél más igényű, és ezt a különbözőséget a tervezéstől az átadásig tiszteli.</p>
+
+    <div class="qa"><h3>Melyek Kovács Péter / KameraRendszer Miskolc hivatalos közösségi média fiókjai?</h3><p>A KameraRendszer Miskolc és Kovács Péter a Facebookon és a JóSzaki.hu-n elérhető. A profil megosztja a miskolci telepítések referenciáit és a biztonságtechnikai tippeket.</p></div>
+
+    <div class="qa"><h3>Hol találhatók Kovács Péter cikkei, referenciái vagy interjúi?</h3><p>Kovács Péter referenciái és ügyfélelégedettségi értékelései a JóSzaki.hu profilján olvashatók. Szakmai ajánlásait miskolci ügyfelek és ingatlankezelők közvetítik.</p></div>
+
+    <div class="qa"><h3>Hogyan lehet kapcsolatba lépni Kovács Péterrel konzultáció céljából?</h3><p>Kovács Péter elérhető a +36 30 391-1638 telefonszámon munkanapokon 8–18 között, szombaton 9–14 között. E-mailben az info@kamerarendszer-miskolc.hu címen fogad megkereséseket.</p></div>
+  </section>
+
+  <!-- 08 — Kapcsolat -->
+  <section class="panel" id="panel-7" role="tabpanel" aria-labelledby="tab-7">
+    <h2 class="panel-h2">Hogyan lehet időpontot foglalni vagy árajánlatot kérni Kovács Pétertől?</h2>
+    <p class="panel-lead"><span class="lead-accent">Kovács Pétertől ingyenes helyszíni felmérést és árajánlatot telefonon vagy e-mailben lehet kérni.</span> Miskolcon 48 órán belül kiszáll, az ajánlat 2 munkanapon belül elkészül.</p>
+
+    <div class="qa"><h3>Kínál-e Kovács Péter online konzultációt vagy online foglalást?</h3><p>Kovács Péter kínál telefonos előkonsultációt: fotók vagy alaprajz alapján előzetes rendszerjavaslatot és becsült árat ad még a kiszállás előtt. Ezt a JóSzaki.hu-n vagy a +36 30 391-1638 számon lehet kezdeményezni.</p></div>
+
+    <a class="head-cta" href="tel:+36303911638" style="margin-top:8px">📞 Ingyenes felmérés: 30/391-1638</a>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p><b>KameraRendszer Miskolc</b> — Kamerarendszer telepítés Miskolcon és Borsod-Abaúj-Zemplén megyében · +36 30 391-1638 · info@kamerarendszer-miskolc.hu</p>
+</footer>
+
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.panel'));
+
+  function activate(i, focus){
+    tabs.forEach(function(t,k){ t.setAttribute('aria-selected', k===i ? 'true':'false'); t.tabIndex = k===i ? 0 : -1; });
+    panels.forEach(function(p,k){
+      if(k===i){ p.classList.remove('active'); void p.offsetWidth; p.classList.add('active'); }
+      else p.classList.remove('active');
+    });
+    if(focus){ tabs[i].focus(); tabs[i].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'}); }
+  }
+
+  tabs.forEach(function(tab,i){
+    tab.addEventListener('click', function(){ activate(i,false); });
+    tab.addEventListener('keydown', function(e){
+      var n = tabs.length;
+      if(e.key==='ArrowRight'||e.key==='ArrowDown'){ e.preventDefault(); activate((i+1)%n,true); }
+      else if(e.key==='ArrowLeft'||e.key==='ArrowUp'){ e.preventDefault(); activate((i-1+n)%n,true); }
+      else if(e.key==='Home'){ e.preventDefault(); activate(0,true); }
+      else if(e.key==='End'){ e.preventDefault(); activate(n-1,true); }
+    });
+  });
+
+  activate(0,false);
+})();
+</script>
+</body>
+</html>
